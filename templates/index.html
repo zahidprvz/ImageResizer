@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Image Resizer</title>
+</head>
+<body>
+    <h1>Image Resizer</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file-input">
+        <label for="width">Width:</label>
+        <input type="number" name="width" id="width" value="300">
+        <label for="height">Height:</label>
+        <input type="number" name="height" id="height" value="300">
+        <button type="button" onclick="resizeImage()">Resize</button>
+    </form>
+    <div id="result"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
