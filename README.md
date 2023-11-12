@@ -30,7 +30,7 @@ A simple web application to upload and resize images using Flask and JavaScript.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/zpmughal/ImageResizer.git
+    git clone https://github.com/zahidparviz/ImageResizer.git
     cd ImageResizer
     ```
 
